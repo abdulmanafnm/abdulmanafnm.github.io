@@ -1,0 +1,250 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar starts */
+
+.navbar-nav{
+    margin: auto;
+}
+
+.name-logo{
+    font-weight: bolder;
+    color: #BAFF39;
+}
+
+.nav-item{
+    padding: 5px;
+}
+
+.nav-item:hover{
+    background-color: #BAFF39;
+    border-radius: 10px;
+}
+.nav-link{
+    color: white !important;
+} 
+
+.nav-link:hover{
+    color: #6e6e6e !important;
+}
+
+/* Navbar ends */
+
+/* Profile section Styles starts */
+
+#about-section {
+    background: rgba(32, 33, 36, 0.1);
+    position: relative;
+}
+
+.blockabout {
+    padding: 20px;
+    background: white;
+}
+
+.blockabout-inner {
+    padding: 30px;
+    border: 1px solid rgba(32, 33, 36, 0.1);
+}
+
+.sosmed-horizontal a i {
+    border: 1px solid #070707;
+    border-radius: 50%;
+    color: #070707;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.rey-btn {
+    border: 2px solid #070707;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn{
+    background-color: #BAFF39 !important;
+    color: #20201e !important;
+    /* font-weight: bold !important; */
+}
+
+.btn:hover{
+    background-color: #20201e !important;
+    color:#BAFF39 !important ;
+}
+
+
+/* Profile section ends */
+
+
+/* Skills section starts */
+.resume-section {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4f4f4f;
+    /* color: white; */
+    font-family: "Poppins", sans-serif;
+    /* background-image: url(images/skills-bg.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    
+  }
+  .list-inline {
+    list-style: none;
+  }
+  
+  .list-icons {
+    font-size: 2.5rem;
+  }
+  
+  #skill-bars {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .progress-bar {
+    background-image: linear-gradient(
+      to right,
+      #c9e496,
+      #a8d258,
+      #a2ca59,
+      #92b84b,
+      #baff39
+    );
+  }
+  
+  .fa-user-tag,
+  .blue,
+  .list-inline-item i:hover {
+    color: #5fb4e8;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .blue{
+    color: #6e6e6e !important;
+  }
+  
+/* Skills section ends */
+
+
+/* POrtfolio starts */
+.portfolio{
+    height: 80vh;
+    width: 100%;
+}
+
+.projects-headline{
+    text-align: center;
+}
+
+.container .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover
+{
+    height: 450px;
+}
+.container .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.card{
+    background-color: #BAFF39;
+}
+.container .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    /* pointer-events: none; */
+    transition: 0.3s ease-in-out;
+    /* background-color: #BAFF39; */
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.project-view{
+    cursor: pointer;
+}
+
+@media (max-width: 330px){
+    .container .card .imgContainer{
+        left: -2px;
+    }
+}
+
+
+/* Portfolio ends */
+
+
+/* contact */
+.footer{
+    background: #6e6e6e;
+    color:#ffff;
+    
+    .links{
+      ul {list-style-type: none;}
+      li a{
+        color: white;
+        transition: color .2s;
+        &:hover{
+          text-decoration:none;
+          color:#4180CB;
+          }
+      }
+    }  
+    .about-company{
+      i{font-size: 25px;}
+      a{
+        color:white;
+        transition: color .2s;
+        &:hover{color:#4180CB}
+      }
+    } 
+    .location{
+      i{font-size: 18px;}
+    }
+    .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+  }
+/* end contact */
